@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+:root {
+  --color-background: #f8fafc;
+  --color-surface: #ffffff;
+  --color-primary: #0c5a83;
+  --color-primary-dark: #094364;
+  --color-primary-light: #41a8d6;
+  --color-accent: #f59e0b;
+  --color-muted: #64748b;
+  --color-muted-dark: #475569;
+  --color-border: #e2e8f0;
+  --gradient-hero: linear-gradient(135deg, #0c5a83 0%, #41a8d6 35%, #f59e0b 100%);
+  --shadow-soft: 0 12px 40px rgba(15, 23, 42, 0.12);
+  --shadow-medium: 0 10px 30px rgba(15, 23, 42, 0.18);
+  --radius-xl: 30px;
+  --radius-lg: 20px;
+  --radius-md: 14px;
+  --radius-sm: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans), "Inter", system-ui, sans-serif;
+  background-color: var(--color-background);
+  color: #0f172a;
+}
+
+a {
+  color: inherit;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.shadow-soft {
+  box-shadow: var(--shadow-soft);
+}
+
+.shadow-medium {
+  box-shadow: var(--shadow-medium);
+}
+
+.bg-grid {
+  background-image: radial-gradient(circle at 1px 1px, rgba(15, 23, 42, 0.12) 1px, transparent 0);
+  background-size: 32px 32px;
+}
