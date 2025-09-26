@@ -214,7 +214,7 @@ const faqs: FAQ[] = [
 
 export default function Home() {
   return (
-    <main className="mx-auto flex w-full max-w-7xl flex-col gap-24 px-6 pb-24 pt-12 sm:pt-20 lg:px-12">
+    <main className="flex w-full max-w-none flex-col gap-24 px-6 pb-24 pt-12 sm:pt-20 lg:px-12">
       <Hero />
       <TrustIndicators />
       <ServicesSection />
